@@ -7,4 +7,3 @@
         command: copy running-config ftp://172.31.15.252
         prompt: "Address or name of remote host \\[172.31.15.252\\]??"
         answer: "\n"
-      when: '"ok" in result.stdout'
