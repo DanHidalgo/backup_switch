@@ -1,9 +1,10 @@
 ---
-- name: Obtener Informacion
+- name: BACKUP
   hosts: sw_to_bck
   tasks:
     - name: "BACKUP: IOS CONFIG to FTP"
       ios_command:
-        command: copy running-config ftp://172.31.15.252
-        prompt: "Address or name of remote host \\[172.31.15.252\\]??"
-        answer: "\n"
+        commands:
+         - command: copy running-config ftp://172.31.15.252
+           prompt: "Address or name of remote host \\[172.31.15.252\\]??"
+           answer: "\n"
