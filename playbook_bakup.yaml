@@ -1,6 +1,6 @@
 ---
 - name: Obtener Informacion
-  hosts: switches
+  hosts: sw_to_bck
   tasks:
     - name: "BACKUP: IOS CONFIG to FTP"
       ios_command:
