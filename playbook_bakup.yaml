@@ -2,8 +2,9 @@
 - name: Obtener Informacion
   hosts: switches
   tasks:
-    - name: "BACKUP: IOS CONFIG to TFTP"
+    - name: "BACKUP: IOS CONFIG to FTP"
       ansible.netcommon.cli_command:
-        command: copy running-config tftp://172.16.14.200
-        prompt: "Address or name of remote host \\[172.16.14.200\\]?"
+        command: copy running-config ftp://172.31.15.252
+        prompt: "Address or name of remote host \\[172.31.15.252\\]??"
         answer: "\n"
+  when: ansible_network_os == 'ios'
