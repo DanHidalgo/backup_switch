@@ -3,7 +3,7 @@
   hosts: switches
   tasks:
     - name: "BACKUP: IOS CONFIG to FTP"
-      ansible.netcommon.cli_command:
+      ios_command:
         command: copy running-config ftp://172.31.15.252
         prompt: "Address or name of remote host \\[172.31.15.252\\]??"
         answer: "\n"
