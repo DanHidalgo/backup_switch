@@ -4,4 +4,4 @@
   ios_command:
    commands:
     - ip ftp username netdevice
-    - ip ftp password LcN3t8hR0$*y1
+    - ip ftp password password
