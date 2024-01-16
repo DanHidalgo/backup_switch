@@ -1,0 +1,8 @@
+---
+- name: BACKUP
+  hosts: sw_to_bck
+  tasks:
+    - name: "BACKUP: IOS CONFIG to FTP"
+      ios_command:
+        commands:
+        - ip ftp username netdevice
