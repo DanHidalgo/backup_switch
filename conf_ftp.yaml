@@ -1,5 +1,5 @@
 ---
-- name: CONFFTP
+- name: CONF_FTP
   host: sw_to_bck
   ios_command:
    commands:
