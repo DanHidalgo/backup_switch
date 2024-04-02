@@ -5,7 +5,7 @@
     - name: "BACKUP: IOS CONFIG to FTP"
       ios_command:
         commands:
-         #- command: copy running-config ftp://172.31.15.252/ftp/upload/
-          # prompt: "Address or name of remote host \\[172.31.15.252\\]??"
-          # answer: "\n"
-         - command: show version
+         - command: copy running-config ftp://172.31.15.252/ftp/upload/
+           prompt: "Address or name of remote host \\[172.31.15.252\\]??"
+           answer: "\n"
+        
