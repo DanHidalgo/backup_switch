@@ -1,6 +1,7 @@
 ---
 - name: BACKUP
   hosts: sw_to_bck
+  gather_facts: no
   tasks:
     - name: "IOS CONFIG to FTP"
       ios_config:
