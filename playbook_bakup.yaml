@@ -1,6 +1,7 @@
 ---
 - name: BACKUP
   hosts: sw_to_bck
+  gather_facts: no
   tasks:
     - name: "BACKUP: IOS CONFIG to FTP"
       ios_command:
@@ -8,4 +9,3 @@
          - command: copy running-config ftp://172.31.15.252/ftp/upload/switch_bk/
            prompt: "Address or name of remote host \\[172.31.15.252\\]??"
            answer: "\n"
-        

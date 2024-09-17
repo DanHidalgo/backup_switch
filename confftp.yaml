@@ -2,8 +2,8 @@
 - name: CONFFTP
   host: sw_to_bck
   tasks:
-   -name: config
-    ios_command:
+   - name: test
+     ios_command:
       commands:
       - ip ftp username netdevice
       - ip ftp password password
